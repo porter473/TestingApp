@@ -45,7 +45,7 @@ dependencies {
 }
 
 tasks.test {
-    finalizedBy(tasks.jacocoTestReport) // report is always generated after tests run
+    finalizedBy(tasks.jacocoTestReport) // report is always generated after tests run   
 }
 tasks.jacocoTestReport {
     dependsOn("test") // Ensure tests are run before generating the report
